@@ -10,4 +10,8 @@ import UIKit
 
 public class SwiftShareBubbles {
 
+    public init() {
+        
+    }
+
 }
