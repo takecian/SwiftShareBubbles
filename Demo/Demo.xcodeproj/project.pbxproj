@@ -7,188 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6488D4C41E729B9B0023393D /* SwiftShareBubbles.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6488D4BA1E729B9B0023393D /* SwiftShareBubbles.framework */; };
-		6488D4C91E729B9B0023393D /* SwiftShareBubblesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D4C81E729B9B0023393D /* SwiftShareBubblesTests.swift */; };
-		6488D4CB1E729B9B0023393D /* SwiftShareBubbles.h in Headers */ = {isa = PBXBuildFile; fileRef = 6488D4BD1E729B9B0023393D /* SwiftShareBubbles.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6488D4D51E729BD50023393D /* SwiftShareBubbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */; };
+		6488D4EA1E729C070023393D /* Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6488D4E01E729C070023393D /* Demo.framework */; };
+		6488D4EF1E729C070023393D /* DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D4EE1E729C070023393D /* DemoTests.swift */; };
+		6488D4F11E729C080023393D /* Demo.h in Headers */ = {isa = PBXBuildFile; fileRef = 6488D4E31E729C070023393D /* Demo.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6488D4C51E729B9B0023393D /* PBXContainerItemProxy */ = {
+		6488D4EB1E729C070023393D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6488D4B11E729B9B0023393D /* Project object */;
+			containerPortal = 6488D4D71E729C070023393D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6488D4B91E729B9B0023393D;
-			remoteInfo = SwiftShareBubbles;
+			remoteGlobalIDString = 6488D4DF1E729C070023393D;
+			remoteInfo = Demo;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6488D4BA1E729B9B0023393D /* SwiftShareBubbles.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftShareBubbles.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6488D4BD1E729B9B0023393D /* SwiftShareBubbles.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftShareBubbles.h; sourceTree = "<group>"; };
-		6488D4BE1E729B9B0023393D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6488D4C31E729B9B0023393D /* SwiftShareBubblesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftShareBubblesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6488D4C81E729B9B0023393D /* SwiftShareBubblesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftShareBubblesTests.swift; sourceTree = "<group>"; };
-		6488D4CA1E729B9B0023393D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftShareBubbles.swift; sourceTree = "<group>"; };
+		6488D4E01E729C070023393D /* Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6488D4E31E729C070023393D /* Demo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Demo.h; sourceTree = "<group>"; };
+		6488D4E41E729C070023393D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6488D4E91E729C070023393D /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6488D4EE1E729C070023393D /* DemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoTests.swift; sourceTree = "<group>"; };
+		6488D4F01E729C080023393D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6488D4B61E729B9B0023393D /* Frameworks */ = {
+		6488D4DC1E729C070023393D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6488D4C01E729B9B0023393D /* Frameworks */ = {
+		6488D4E61E729C070023393D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6488D4C41E729B9B0023393D /* SwiftShareBubbles.framework in Frameworks */,
+				6488D4EA1E729C070023393D /* Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6488D4B01E729B9B0023393D = {
+		6488D4D61E729C070023393D = {
 			isa = PBXGroup;
 			children = (
-				6488D4BC1E729B9B0023393D /* SwiftShareBubbles */,
-				6488D4C71E729B9B0023393D /* SwiftShareBubblesTests */,
-				6488D4BB1E729B9B0023393D /* Products */,
+				6488D4E21E729C070023393D /* Demo */,
+				6488D4ED1E729C070023393D /* DemoTests */,
+				6488D4E11E729C070023393D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6488D4BB1E729B9B0023393D /* Products */ = {
+		6488D4E11E729C070023393D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6488D4BA1E729B9B0023393D /* SwiftShareBubbles.framework */,
-				6488D4C31E729B9B0023393D /* SwiftShareBubblesTests.xctest */,
+				6488D4E01E729C070023393D /* Demo.framework */,
+				6488D4E91E729C070023393D /* DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6488D4BC1E729B9B0023393D /* SwiftShareBubbles */ = {
+		6488D4E21E729C070023393D /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				6488D4BD1E729B9B0023393D /* SwiftShareBubbles.h */,
-				6488D4BE1E729B9B0023393D /* Info.plist */,
-				6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */,
+				6488D4E31E729C070023393D /* Demo.h */,
+				6488D4E41E729C070023393D /* Info.plist */,
 			);
-			path = SwiftShareBubbles;
+			path = Demo;
 			sourceTree = "<group>";
 		};
-		6488D4C71E729B9B0023393D /* SwiftShareBubblesTests */ = {
+		6488D4ED1E729C070023393D /* DemoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6488D4C81E729B9B0023393D /* SwiftShareBubblesTests.swift */,
-				6488D4CA1E729B9B0023393D /* Info.plist */,
+				6488D4EE1E729C070023393D /* DemoTests.swift */,
+				6488D4F01E729C080023393D /* Info.plist */,
 			);
-			path = SwiftShareBubblesTests;
+			path = DemoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		6488D4B71E729B9B0023393D /* Headers */ = {
+		6488D4DD1E729C070023393D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6488D4CB1E729B9B0023393D /* SwiftShareBubbles.h in Headers */,
+				6488D4F11E729C080023393D /* Demo.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6488D4B91E729B9B0023393D /* SwiftShareBubbles */ = {
+		6488D4DF1E729C070023393D /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6488D4CE1E729B9B0023393D /* Build configuration list for PBXNativeTarget "SwiftShareBubbles" */;
+			buildConfigurationList = 6488D4F41E729C080023393D /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
-				6488D4B51E729B9B0023393D /* Sources */,
-				6488D4B61E729B9B0023393D /* Frameworks */,
-				6488D4B71E729B9B0023393D /* Headers */,
-				6488D4B81E729B9B0023393D /* Resources */,
+				6488D4DB1E729C070023393D /* Sources */,
+				6488D4DC1E729C070023393D /* Frameworks */,
+				6488D4DD1E729C070023393D /* Headers */,
+				6488D4DE1E729C070023393D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftShareBubbles;
-			productName = SwiftShareBubbles;
-			productReference = 6488D4BA1E729B9B0023393D /* SwiftShareBubbles.framework */;
+			name = Demo;
+			productName = Demo;
+			productReference = 6488D4E01E729C070023393D /* Demo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6488D4C21E729B9B0023393D /* SwiftShareBubblesTests */ = {
+		6488D4E81E729C070023393D /* DemoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6488D4D11E729B9B0023393D /* Build configuration list for PBXNativeTarget "SwiftShareBubblesTests" */;
+			buildConfigurationList = 6488D4F71E729C080023393D /* Build configuration list for PBXNativeTarget "DemoTests" */;
 			buildPhases = (
-				6488D4BF1E729B9B0023393D /* Sources */,
-				6488D4C01E729B9B0023393D /* Frameworks */,
-				6488D4C11E729B9B0023393D /* Resources */,
+				6488D4E51E729C070023393D /* Sources */,
+				6488D4E61E729C070023393D /* Frameworks */,
+				6488D4E71E729C070023393D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6488D4C61E729B9B0023393D /* PBXTargetDependency */,
+				6488D4EC1E729C070023393D /* PBXTargetDependency */,
 			);
-			name = SwiftShareBubblesTests;
-			productName = SwiftShareBubblesTests;
-			productReference = 6488D4C31E729B9B0023393D /* SwiftShareBubblesTests.xctest */;
+			name = DemoTests;
+			productName = DemoTests;
+			productReference = 6488D4E91E729C070023393D /* DemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6488D4B11E729B9B0023393D /* Project object */ = {
+		6488D4D71E729C070023393D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = com.takecian;
 				TargetAttributes = {
-					6488D4B91E729B9B0023393D = {
+					6488D4DF1E729C070023393D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = XEV6645KTD;
-						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
-					6488D4C21E729B9B0023393D = {
+					6488D4E81E729C070023393D = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = XEV6645KTD;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 6488D4B41E729B9B0023393D /* Build configuration list for PBXProject "SwiftShareBubbles" */;
+			buildConfigurationList = 6488D4DA1E729C070023393D /* Build configuration list for PBXProject "Demo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 6488D4B01E729B9B0023393D;
-			productRefGroup = 6488D4BB1E729B9B0023393D /* Products */;
+			mainGroup = 6488D4D61E729C070023393D;
+			productRefGroup = 6488D4E11E729C070023393D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6488D4B91E729B9B0023393D /* SwiftShareBubbles */,
-				6488D4C21E729B9B0023393D /* SwiftShareBubblesTests */,
+				6488D4DF1E729C070023393D /* Demo */,
+				6488D4E81E729C070023393D /* DemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6488D4B81E729B9B0023393D /* Resources */ = {
+		6488D4DE1E729C070023393D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6488D4C11E729B9B0023393D /* Resources */ = {
+		6488D4E71E729C070023393D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,34 +194,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6488D4B51E729B9B0023393D /* Sources */ = {
+		6488D4DB1E729C070023393D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6488D4D51E729BD50023393D /* SwiftShareBubbles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6488D4BF1E729B9B0023393D /* Sources */ = {
+		6488D4E51E729C070023393D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6488D4C91E729B9B0023393D /* SwiftShareBubblesTests.swift in Sources */,
+				6488D4EF1E729C070023393D /* DemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6488D4C61E729B9B0023393D /* PBXTargetDependency */ = {
+		6488D4EC1E729C070023393D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6488D4B91E729B9B0023393D /* SwiftShareBubbles */;
-			targetProxy = 6488D4C51E729B9B0023393D /* PBXContainerItemProxy */;
+			target = 6488D4DF1E729C070023393D /* Demo */;
+			targetProxy = 6488D4EB1E729C070023393D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		6488D4CC1E729B9B0023393D /* Debug */ = {
+		6488D4F21E729C080023393D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,7 +273,7 @@
 			};
 			name = Debug;
 		};
-		6488D4CD1E729B9B0023393D /* Release */ = {
+		6488D4F31E729C080023393D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -324,68 +319,63 @@
 			};
 			name = Release;
 		};
-		6488D4CF1E729B9B0023393D /* Debug */ = {
+		6488D4F51E729C080023393D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XEV6645KTD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftShareBubbles/Info.plist;
+				INFOPLIST_FILE = Demo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.SwiftShareBubbles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		6488D4D01E729B9B0023393D /* Release */ = {
+		6488D4F61E729C080023393D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = XEV6645KTD;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = SwiftShareBubbles/Info.plist;
+				INFOPLIST_FILE = Demo/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.SwiftShareBubbles;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
-		6488D4D21E729B9B0023393D /* Debug */ = {
+		6488D4F81E729C080023393D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = XEV6645KTD;
-				INFOPLIST_FILE = SwiftShareBubblesTests/Info.plist;
+				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.SwiftShareBubblesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		6488D4D31E729B9B0023393D /* Release */ = {
+		6488D4F91E729C080023393D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = XEV6645KTD;
-				INFOPLIST_FILE = SwiftShareBubblesTests/Info.plist;
+				INFOPLIST_FILE = DemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.SwiftShareBubblesTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.DemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -394,34 +384,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6488D4B41E729B9B0023393D /* Build configuration list for PBXProject "SwiftShareBubbles" */ = {
+		6488D4DA1E729C070023393D /* Build configuration list for PBXProject "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6488D4CC1E729B9B0023393D /* Debug */,
-				6488D4CD1E729B9B0023393D /* Release */,
+				6488D4F21E729C080023393D /* Debug */,
+				6488D4F31E729C080023393D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6488D4CE1E729B9B0023393D /* Build configuration list for PBXNativeTarget "SwiftShareBubbles" */ = {
+		6488D4F41E729C080023393D /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6488D4CF1E729B9B0023393D /* Debug */,
-				6488D4D01E729B9B0023393D /* Release */,
+				6488D4F51E729C080023393D /* Debug */,
+				6488D4F61E729C080023393D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		6488D4D11E729B9B0023393D /* Build configuration list for PBXNativeTarget "SwiftShareBubblesTests" */ = {
+		6488D4F71E729C080023393D /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6488D4D21E729B9B0023393D /* Debug */,
-				6488D4D31E729B9B0023393D /* Release */,
+				6488D4F81E729C080023393D /* Debug */,
+				6488D4F91E729C080023393D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6488D4B11E729B9B0023393D /* Project object */;
+	rootObject = 6488D4D71E729C070023393D /* Project object */;
 }
