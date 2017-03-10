@@ -491,6 +491,7 @@
 				6488D52B1E729C990023393D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6488D52C1E729C990023393D /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				6488D52E1E729C990023393D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

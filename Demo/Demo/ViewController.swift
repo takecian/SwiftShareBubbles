@@ -11,13 +11,13 @@ import SwiftShareBubbles
 
 class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
-    let bubbles = SwiftShareBubbles()
-
+    var bubbles: SwiftShareBubbles?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        bubbles.delegate = self
-        bubbles.hide()
+        bubbles = SwiftShareBubbles(point: CGPoint(x: view.frame.width / 2, y: view.frame.height / 2), radius: 100, in: view)
+        bubbles?.delegate = self
     }
 
     func bubblesTapped(bubbles: SwiftShareBubbles) {
@@ -28,5 +28,8 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
         print("hide:")
     }
 
+    @IBAction func buttonTapped(_ sender: Any) {
+        bubbles?.show()
+    }
 }
 

@@ -13,6 +13,7 @@
 		6488D4D51E729BD50023393D /* SwiftShareBubbles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */; };
 		6488D53E1E729F5C0023393D /* SwiftShareBubbles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6488D53D1E729F5C0023393D /* SwiftShareBubbles.bundle */; };
 		6488D5401E729FBA0023393D /* SwiftShareBubblesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D53F1E729FBA0023393D /* SwiftShareBubblesDelegate.swift */; };
+		AC5AFC4B1E72E14C005FA538 /* SwiftShareBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AFC4A1E72E14C005FA538 /* SwiftShareBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftShareBubbles.swift; sourceTree = "<group>"; };
 		6488D53D1E729F5C0023393D /* SwiftShareBubbles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SwiftShareBubbles.bundle; sourceTree = "<group>"; };
 		6488D53F1E729FBA0023393D /* SwiftShareBubblesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftShareBubblesDelegate.swift; sourceTree = "<group>"; };
+		AC5AFC4A1E72E14C005FA538 /* SwiftShareBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftShareBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				6488D53D1E729F5C0023393D /* SwiftShareBubbles.bundle */,
 				6488D4BD1E729B9B0023393D /* SwiftShareBubbles.h */,
 				6488D4BE1E729B9B0023393D /* Info.plist */,
+				AC5AFC4A1E72E14C005FA538 /* SwiftShareBubble.swift */,
 				6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */,
 				6488D53F1E729FBA0023393D /* SwiftShareBubblesDelegate.swift */,
 			);
@@ -211,6 +214,7 @@
 			files = (
 				6488D5401E729FBA0023393D /* SwiftShareBubblesDelegate.swift in Sources */,
 				6488D4D51E729BD50023393D /* SwiftShareBubbles.swift in Sources */,
+				AC5AFC4B1E72E14C005FA538 /* SwiftShareBubble.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
