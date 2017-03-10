@@ -8,10 +8,16 @@
 
 import UIKit
 
-public class SwiftShareBubbles {
+public class SwiftShareBubbles: UIView {
+    public weak var delegate: SwiftShareBubblesDelegate?
 
-    public init() {
-        
+
+    public func show() {
+        delegate?.bubblesTapped(bubbles: self)
+    }
+
+    public func hide() {
+        delegate?.bubblesDidHide(bubbles: self)
     }
 
 }

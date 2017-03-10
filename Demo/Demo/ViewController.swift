@@ -9,20 +9,24 @@
 import UIKit
 import SwiftShareBubbles
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
     let bubbles = SwiftShareBubbles()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        bubbles.delegate = self
+        bubbles.hide()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func bubblesTapped(bubbles: SwiftShareBubbles) {
+        print("")
     }
 
+    func bubblesDidHide(bubbles: SwiftShareBubbles) {
+        print("hide:")
+    }
 
 }
 
