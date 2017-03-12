@@ -14,6 +14,8 @@
 		6488D53E1E729F5C0023393D /* SwiftShareBubbles.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6488D53D1E729F5C0023393D /* SwiftShareBubbles.bundle */; };
 		6488D5401E729FBA0023393D /* SwiftShareBubblesDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6488D53F1E729FBA0023393D /* SwiftShareBubblesDelegate.swift */; };
 		AC5AFC4B1E72E14C005FA538 /* ShareAttirbute.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AFC4A1E72E14C005FA538 /* ShareAttirbute.swift */; };
+		AC5AFC4D1E744CF3005FA538 /* UIColor+SwiftShareBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AFC4C1E744CF3005FA538 /* UIColor+SwiftShareBubble.swift */; };
+		AC5AFC4F1E744F6F005FA538 /* Bubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5AFC4E1E744F6F005FA538 /* Bubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,8 @@
 		6488D53D1E729F5C0023393D /* SwiftShareBubbles.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SwiftShareBubbles.bundle; sourceTree = "<group>"; };
 		6488D53F1E729FBA0023393D /* SwiftShareBubblesDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftShareBubblesDelegate.swift; sourceTree = "<group>"; };
 		AC5AFC4A1E72E14C005FA538 /* ShareAttirbute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareAttirbute.swift; sourceTree = "<group>"; };
+		AC5AFC4C1E744CF3005FA538 /* UIColor+SwiftShareBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SwiftShareBubble.swift"; sourceTree = "<group>"; };
+		AC5AFC4E1E744F6F005FA538 /* Bubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +89,8 @@
 				AC5AFC4A1E72E14C005FA538 /* ShareAttirbute.swift */,
 				6488D4D41E729BD50023393D /* SwiftShareBubbles.swift */,
 				6488D53F1E729FBA0023393D /* SwiftShareBubblesDelegate.swift */,
+				AC5AFC4C1E744CF3005FA538 /* UIColor+SwiftShareBubble.swift */,
+				AC5AFC4E1E744F6F005FA538 /* Bubble.swift */,
 			);
 			path = SwiftShareBubbles;
 			sourceTree = "<group>";
@@ -213,6 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6488D5401E729FBA0023393D /* SwiftShareBubblesDelegate.swift in Sources */,
+				AC5AFC4F1E744F6F005FA538 /* Bubble.swift in Sources */,
+				AC5AFC4D1E744CF3005FA538 /* UIColor+SwiftShareBubble.swift in Sources */,
 				6488D4D51E729BD50023393D /* SwiftShareBubbles.swift in Sources */,
 				AC5AFC4B1E72E14C005FA538 /* ShareAttirbute.swift in Sources */,
 			);
@@ -278,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -325,7 +333,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

@@ -11,6 +11,8 @@ import UIKit
 public class SwiftShareBubbles: UIView {
     public weak var delegate: SwiftShareBubblesDelegate?
     
+    public var showBubbleTypes = [Bubble.facebook, Bubble.twitter, Bubble.line, Bubble.google, Bubble.instagram, Bubble.linkedin, Bubble.pintereset, Bubble.weibo, Bubble.whatsapp, Bubble.youtube]
+    
     private var radius: Int
     private var bubbleRadius: Int
     private var parentView: UIView
@@ -41,10 +43,30 @@ public class SwiftShareBubbles: UIView {
         attributes.removeAll()
         buttons.removeAll()
 
-        let attribute = ShareAttirbute.createFacebookButton()
-        attributes.append(attribute)
-        
-        createButton(attribute: attribute)
+        for showBubble in showBubbleTypes {
+            switch showBubble {
+            case .facebook:
+                createButton(attribute: ShareAttirbute.createFacebook())
+            case .twitter:
+                createButton(attribute: ShareAttirbute.createTwitter())
+            case .line:
+                createButton(attribute: ShareAttirbute.createLine())
+            case .whatsapp:
+                createButton(attribute: ShareAttirbute.createWhatsapp())
+            case .linkedin:
+                createButton(attribute: ShareAttirbute.createLinkedin())
+            case .weibo:
+                createButton(attribute: ShareAttirbute.createWeibo())
+            case .youtube:
+                createButton(attribute: ShareAttirbute.createYoutube())
+            case .pintereset:
+                createButton(attribute: ShareAttirbute.createPinterest())
+            case .instagram:
+                createButton(attribute: ShareAttirbute.createInstagram())
+            case .google:
+                createButton(attribute: ShareAttirbute.createGoogle())
+            }
+        }
         
         guard attributes.count > 0 else { return }
         isAnimating = true
@@ -70,8 +92,7 @@ public class SwiftShareBubbles: UIView {
 
         var coordinates = [CGPoint]()
         
-        for (index, button) in buttons.enumerated()
-        {
+        for (index, button) in buttons.enumerated() {
             button.tag = index
             
             let angle = startAngel + Float(index) * bubblesBetweenAngel
@@ -83,7 +104,9 @@ public class SwiftShareBubbles: UIView {
             button.transform = CGAffineTransform(scaleX: 0.001, y: 0.001)
             button.center = CGPoint(x: CGFloat(radius), y: CGFloat(radius))
             
-            showBubbleWithAnimation(button: button, coordinate: coordinate)
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 * Double(index)) {
+                self.showBubbleWithAnimation(button: button, coordinate: coordinate)
+            }
         }
 
     }
@@ -91,8 +114,10 @@ public class SwiftShareBubbles: UIView {
     public func hide() {
         guard !isAnimating else { return }
         
-        for button in buttons {
-            hideBubbleWithAnimation(button: button)
+        for (index, button) in buttons.enumerated() {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1 * Double(index)) {
+                self.hideBubbleWithAnimation(button: button)
+            }
         }
     }
 
@@ -101,7 +126,10 @@ public class SwiftShareBubbles: UIView {
     }
 
     func buttonTapped(_ sender: UIButton) {
-        print("aaa")
+        let attribute = attributes[sender.tag]
+        print("\(attribute.bubbleId) tapped")
+        delegate?.bubblesTapped(bubbles: self, bubbleId: attribute.bubbleId)
+        hide()
     }
 
     private func createButton(attribute: ShareAttirbute) {
@@ -127,8 +155,8 @@ public class SwiftShareBubbles: UIView {
         
         button.setBackgroundImage(imageWith(view: circle), for: UIControlState.normal)
         buttons.append(button)
-//        bubbleIndexTypes[@(bubbles.count - 1)] = @(buttonId);
-        
+        attributes.append(attribute)
+
         self.addSubview(button)
     }
 

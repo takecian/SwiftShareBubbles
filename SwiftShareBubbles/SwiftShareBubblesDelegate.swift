@@ -10,8 +10,7 @@ import UIKit
 
 public protocol SwiftShareBubblesDelegate: class {
 
-//    -(void)aaShareBubbles:(AAShareBubbles *)shareBubbles tappedBubbleWithType:(AAShareBubbleType)bubbleType;
-    func bubblesTapped(bubbles: SwiftShareBubbles)
+    func bubblesTapped(bubbles: SwiftShareBubbles, bubbleId: Int)
 
     func bubblesDidHide(bubbles: SwiftShareBubbles)
 }
