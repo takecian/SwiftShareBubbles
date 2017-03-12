@@ -24,38 +24,38 @@ extension ShareAttirbute {
     }
 
     static func createLine() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-line", color: UIColor.colorFromRGB("57BE37"))!
+        return createButton(bubbleId: Bubble.line.rawValue, imageName: "icon-line", color: UIColor.colorFromRGB("57BE37"))!
     }
 
     static func createGoogle() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.facebook.rawValue, imageName: "icon-googleplus", color: UIColor.colorFromRGB("d95433"))!
+        return createButton(bubbleId: Bubble.google.rawValue, imageName: "icon-googleplus", color: UIColor.colorFromRGB("d95433"))!
     }
     
     static func createInstagram() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-instagram", color: UIColor.colorFromRGB("2e5e89"))!
+        return createButton(bubbleId: Bubble.instagram.rawValue, imageName: "icon-instagram", color: UIColor.colorFromRGB("2e5e89"))!
     }
     
     static func createLinkedin() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-linkedin", color: UIColor.colorFromRGB("008dd2"))!
+        return createButton(bubbleId: Bubble.linkedin.rawValue, imageName: "icon-linkedin", color: UIColor.colorFromRGB("008dd2"))!
     }
     static func createWeibo() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.facebook.rawValue, imageName: "icon-weibo", color: UIColor.colorFromRGB("E6162D"))!
+        return createButton(bubbleId: Bubble.weibo.rawValue, imageName: "icon-weibo", color: UIColor.colorFromRGB("E6162D"))!
     }
     
     static func createWhatsapp() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-whatsapp", color: UIColor.colorFromRGB("00B000"))!
+        return createButton(bubbleId: Bubble.whatsapp.rawValue, imageName: "icon-whatsapp", color: UIColor.colorFromRGB("00B000"))!
     }
     
     static func createPinterest() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-pinterest", color: UIColor.colorFromRGB("b61d23"))!
+        return createButton(bubbleId: Bubble.pintereset.rawValue, imageName: "icon-pinterest", color: UIColor.colorFromRGB("b61d23"))!
     }
 
     static func createYoutube() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-youtube", color: UIColor.colorFromRGB("ce3025"))!
+        return createButton(bubbleId: Bubble.youtube.rawValue, imageName: "icon-youtube", color: UIColor.colorFromRGB("ce3025"))!
     }
 
     static func createSafari() -> ShareAttirbute {
-        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-safari", color: UIColor.colorFromRGB("FFFFFF"))!
+        return createButton(bubbleId: Bubble.safari.rawValue, imageName: "icon-safari", color: UIColor.colorFromRGB("FFFFFF"))!
     }
 
     private static func createButton(bubbleId: Int, imageName: String, color: UIColor) -> ShareAttirbute? {
