@@ -20,6 +20,11 @@ github "takecian/SwiftShareBubbles"
 
 ## Usage
 
+1. Instantiate SwiftShareBubbles, specify center position and radius of Circle.
+1. Choose social buttons to be shown.
+1. Set delegate
+1. Call show method.
+
 ```
 class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
@@ -36,9 +41,9 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
         if let bubble = Bubble(rawValue: bubbleId) {
             print("\(bubble)")
             switch bubble {
-            case .facebook:
+        * .faceb
                 break
-            case .twitter:
+        * .twit
                 if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
                     guard let composer = SLComposeViewController(forServiceType: SLServiceTypeTwitter) else { return }
                     composer.setInitialText("test test")
@@ -67,6 +72,21 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
 ```
 
 ![ShareBubbles2](./Resource/ShareBubbles2.gif)
+
+## Social buttons
+
+* facebook
+* Twitter
+* LINE
+* google plus
+* Youtube
+* Instagram
+* Pintereset
+* Whatsapp
+* Linkedin
+* Weibo
+* Safari 
+
 
 ## License
 
