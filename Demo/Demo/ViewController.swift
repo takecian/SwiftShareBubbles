@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftShareBubbles
+import Social
 
 class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
@@ -15,7 +16,6 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         bubbles = SwiftShareBubbles(point: CGPoint(x: view.frame.width / 2, y: view.frame.height / 2), radius: 100, in: view)
         bubbles?.showBubbleTypes = [Bubble.twitter, Bubble.line, Bubble.safari]
         bubbles?.delegate = self
@@ -28,6 +28,11 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
             case .facebook:
                 break
             case .twitter:
+                if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
+                    guard let composer = SLComposeViewController(forServiceType: SLServiceTypeTwitter) else { return }
+                    composer.setInitialText("test test")
+                    present(composer, animated: true, completion: nil)
+                }
                 break
             case .line:
                 break
