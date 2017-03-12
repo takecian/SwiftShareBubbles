@@ -41,9 +41,9 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
         if let bubble = Bubble(rawValue: bubbleId) {
             print("\(bubble)")
             switch bubble {
-        * .faceb
+            case .facebook:
                 break
-        * .twit
+            case .twitter:
                 if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
                     guard let composer = SLComposeViewController(forServiceType: SLServiceTypeTwitter) else { return }
                     composer.setInitialText("test test")
@@ -55,7 +55,6 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
             default:
                 break
             }
-        
         } else {
             // custom case
         }
