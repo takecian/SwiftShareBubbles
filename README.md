@@ -4,6 +4,8 @@ This library is inspired [AAShareBubbles](https://github.com/mixdesign/AAShareBu
 
 ![ShareBubbles1](./Resource/ShareBubbles1.gif)
 
+I tried AAShareBubbles with Swift, it mostly worked. But I code cannot use AAShareBubbles(Objective-c code) in protocol extension. So I created SwiftShareBubbles in pure Swift.
+
 ## Requirements
 
 iOS 8.0 or later, written in Swift3.
@@ -37,6 +39,7 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
         bubbles?.delegate = self
     }
 
+    // SwiftShareBubblesDelegate
     func bubblesTapped(bubbles: SwiftShareBubbles, bubbleId: Int) {
         if let bubble = Bubble(rawValue: bubbleId) {
             print("\(bubble)")
@@ -72,7 +75,7 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
 ![ShareBubbles2](./Resource/ShareBubbles2.gif)
 
-## Social buttons
+## Supported buttons
 
 * facebook
 * Twitter
