@@ -8,8 +8,6 @@ iOS 8.0 or later, written in Swift3.
 
 ## Installation
 
-## Installation
-
 ### Carthage
 
 SwiftRoutes is compatible with [Carthage](https://github.com/Carthage/Carthage). Add it to your `Cartfile`:

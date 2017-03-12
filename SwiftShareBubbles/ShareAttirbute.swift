@@ -54,6 +54,10 @@ extension ShareAttirbute {
         return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-youtube", color: UIColor.colorFromRGB("ce3025"))!
     }
 
+    static func createSafari() -> ShareAttirbute {
+        return createButton(bubbleId: Bubble.twitter.rawValue, imageName: "icon-safari", color: UIColor.colorFromRGB("FFFFFF"))!
+    }
+
     private static func createButton(bubbleId: Int, imageName: String, color: UIColor) -> ShareAttirbute? {
         let classBundle = Bundle(for: SwiftShareBubbles.self)
         guard let bundle = Bundle(path: "\(classBundle.bundlePath)/SwiftShareBubbles.bundle") else { return nil }

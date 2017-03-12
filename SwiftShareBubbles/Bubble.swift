@@ -19,5 +19,5 @@ public enum Bubble: Int {
     case whatsapp = 7
     case linkedin = 8
     case weibo = 9
-
+    case safari = 10
 }

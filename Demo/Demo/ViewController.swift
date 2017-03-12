@@ -17,7 +17,7 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
         super.viewDidLoad()
 
         bubbles = SwiftShareBubbles(point: CGPoint(x: view.frame.width / 2, y: view.frame.height / 2), radius: 100, in: view)
-        bubbles?.showBubbleTypes = [Bubble.twitter, Bubble.line]
+        bubbles?.showBubbleTypes = [Bubble.twitter, Bubble.line, Bubble.safari]
         bubbles?.delegate = self
     }
 

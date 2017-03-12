@@ -65,6 +65,8 @@ public class SwiftShareBubbles: UIView {
                 createButton(attribute: ShareAttirbute.createInstagram())
             case .google:
                 createButton(attribute: ShareAttirbute.createGoogle())
+            case .safari:
+                createButton(attribute: ShareAttirbute.createSafari())
             }
         }
         
