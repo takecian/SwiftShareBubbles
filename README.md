@@ -4,7 +4,7 @@ This library is inspired [AAShareBubbles](https://github.com/mixdesign/AAShareBu
 
 ![ShareBubbles1](./Resource/ShareBubbles1.gif)
 
-I tried AAShareBubbles with Swift, it mostly worked. But I code cannot use AAShareBubbles(Objective-c code) in protocol extension. So I created SwiftShareBubbles in pure Swift.
+I tried AAShareBubbles with Swift, it mostly worked. But I cannot use AAShareBubbles(Objective-c code) in protocol extension. So I created SwiftShareBubbles in pure Swift.
 
 ## Requirements
 
