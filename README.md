@@ -12,6 +12,12 @@ iOS 8.0 or later, written in Swift3.
 
 ## Installation
 
+### Cocoapods
+
+```ruby
+pod 'SwiftShareBubbles'
+```
+
 ### Carthage
 
 SwiftRoutes is compatible with [Carthage](https://github.com/Carthage/Carthage). Add it to your `Cartfile`:
@@ -88,6 +94,27 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
 * Linkedin
 * Weibo
 * Safari 
+
+## Custom icons
+
+You can add custom icons as follows,
+
+```
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        ...
+	    let customBubbleId = 100
+	    let customAttribute = ShareAttirbute(bubbleId: customBubbleId, icon: UIImage(named: "Custom")!, backgroundColor: UIColor.white)
+	    bubbles?.customBubbleAttributes = [customAttribute]
+    }
+
+     func bubblesTapped(bubbles: SwiftShareBubbles, bubbleId: Int) {
+        if customBubbleId == bubbleId {
+            // custom case
+            print("custom tapped")
+        }
+    }
+```
 
 
 ## License
