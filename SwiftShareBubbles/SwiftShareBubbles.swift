@@ -12,6 +12,7 @@ public class SwiftShareBubbles: UIView {
     public weak var delegate: SwiftShareBubblesDelegate?
     
     public var showBubbleTypes = [Bubble.facebook, Bubble.twitter, Bubble.line, Bubble.google, Bubble.instagram, Bubble.linkedin, Bubble.pintereset, Bubble.weibo, Bubble.whatsapp, Bubble.youtube]
+    public var customBubbleAttributes = [ShareAttirbute]()
     
     private var radius: Int
     private var bubbleRadius: Int
@@ -68,6 +69,9 @@ public class SwiftShareBubbles: UIView {
             case .safari:
                 createButton(attribute: ShareAttirbute.createSafari())
             }
+        }
+        for customBubbleAttribute in customBubbleAttributes {
+            createButton(attribute: customBubbleAttribute)
         }
         
         guard attributes.count > 0 else { return }

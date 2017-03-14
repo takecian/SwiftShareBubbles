@@ -8,10 +8,17 @@
 
 import UIKit
 
-struct ShareAttirbute {
+/// Social button attribute. For custom button, custom bubbleId must be other than values define in `enum Bubble`.
+public struct ShareAttirbute {
     let bubbleId: Int
     let icon: UIImage
     let backgroundColor: UIColor
+    
+    public init(bubbleId: Int, icon: UIImage, backgroundColor: UIColor) {
+        self.bubbleId = bubbleId
+        self.icon = icon
+        self.backgroundColor = backgroundColor
+    }
 }
 
 extension ShareAttirbute {

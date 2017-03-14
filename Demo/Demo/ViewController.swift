@@ -13,11 +13,16 @@ import Social
 class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
     var bubbles: SwiftShareBubbles?
+    let customBubbleId = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
         bubbles = SwiftShareBubbles(point: CGPoint(x: view.frame.width / 2, y: view.frame.height / 2), radius: 100, in: view)
         bubbles?.showBubbleTypes = [Bubble.twitter, Bubble.line, Bubble.safari]
+        
+        let customAttribute = ShareAttirbute(bubbleId: customBubbleId, icon: UIImage(named: "Custom")!, backgroundColor: UIColor.white)
+        bubbles?.customBubbleAttributes = [customAttribute]
+        
         bubbles?.delegate = self
     }
 
@@ -41,7 +46,10 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
             }
         
         } else {
-            // custom case
+            if customBubbleId == bubbleId {
+                // custom case
+                print("custom tapped")
+            }
         }
     }
 
