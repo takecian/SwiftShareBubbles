@@ -1,4 +1,11 @@
+
 # SwiftShareBubbles
+
+[![Version](https://img.shields.io/cocoapods/v/SwiftRoutes.svg?style=flat)](http://cocoapods.org/pods/SwiftShareBubbles)
+[![License](https://img.shields.io/cocoapods/l/SwiftRoutes.svg?style=flat)](http://cocoapods.org/pods/SwiftShareBubbles)
+[![Platform](https://img.shields.io/cocoapods/p/SwiftRoutes.svg?style=flat)](http://cocoapods.org/pods/SwiftShareBubbles)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+
 Animated Social share buttons control for iOS written in Swift.
 This library is inspired [AAShareBubbles](https://github.com/mixdesign/AAShareBubbles). 
 
