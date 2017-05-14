@@ -40,7 +40,7 @@ github "takecian/SwiftShareBubbles"
 1. Set delegate
 1. Call show method.
 
-```
+```swift
 class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
     var bubbles: SwiftShareBubbles?
@@ -106,7 +106,7 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
 You can add custom icons as follows,
 
-```
+```swift
     override func viewDidLoad() {
         super.viewDidLoad()
         ...
