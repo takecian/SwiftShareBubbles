@@ -68,7 +68,7 @@ extension ShareAttirbute {
     private static func createButton(bubbleId: Int, imageName: String, color: UIColor) -> ShareAttirbute? {
         let classBundle = Bundle(for: SwiftShareBubbles.self)
         guard let bundle = Bundle(path: "\(classBundle.bundlePath)/SwiftShareBubbles.bundle") else { return nil }
-        guard let icon = UIImage(named: imageName, in: bundle, compatibleWith: nil) else { return nil }
+        guard let icon = UIImage(named: "SwiftShareBubbles.bundle/\(imageName)", in: bundle, compatibleWith: nil) else { return nil }
         return ShareAttirbute(bubbleId: bubbleId, icon: icon, backgroundColor: color)
     }
 }
