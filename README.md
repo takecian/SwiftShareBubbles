@@ -107,12 +107,16 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
 You can add custom icons as follows,
 
 ```swift
+class ViewController: UIViewController, SwiftShareBubblesDelegate {
+
+    var bubbles: SwiftShareBubbles?
+    let customBubbleId = 100
     override func viewDidLoad() {
         super.viewDidLoad()
         ...
-	    let customBubbleId = 100
 	    let customAttribute = ShareAttirbute(bubbleId: customBubbleId, icon: UIImage(named: "Custom")!, backgroundColor: UIColor.white)
 	    bubbles?.customBubbleAttributes = [customAttribute]
+        bubbles?.delegate = self
     }
 
      func bubblesTapped(bubbles: SwiftShareBubbles, bubbleId: Int) {
@@ -121,6 +125,7 @@ You can add custom icons as follows,
             print("custom tapped")
         }
     }
+}
 ```
 
 
