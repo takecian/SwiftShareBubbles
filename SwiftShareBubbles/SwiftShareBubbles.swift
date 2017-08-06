@@ -102,8 +102,8 @@ public class SwiftShareBubbles: UIView {
             button.tag = index
             
             let angle = startAngel + Float(index) * bubblesBetweenAngel
-            let x = (CGFloat) (cos(Double(angle) * M_PI / 180) * bubbleDistanceFromPivot + Double(radius));
-            let y = (CGFloat) (sin(Double(angle) * M_PI / 180) * bubbleDistanceFromPivot + Double(radius));
+            let x = (CGFloat) (cos(Double(angle) * Double.pi / 180) * bubbleDistanceFromPivot + Double(radius));
+            let y = (CGFloat) (sin(Double(angle) * Double.pi / 180) * bubbleDistanceFromPivot + Double(radius));
             
             let coordinate = CGPoint(x: x, y: y)
             coordinates.append(coordinate)
