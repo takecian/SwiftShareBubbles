@@ -127,11 +127,11 @@ public class SwiftShareBubbles: UIView {
         }
     }
 
-    func faderViewTapped(_ sender: UITapGestureRecognizer) {
+    @objc func faderViewTapped(_ sender: UITapGestureRecognizer) {
         hide()
     }
 
-    func buttonTapped(_ sender: UIButton) {
+    @objc func buttonTapped(_ sender: UIButton) {
         let attribute = attributes[sender.tag]
         print("\(attribute.bubbleId) tapped")
         delegate?.bubblesTapped(bubbles: self, bubbleId: attribute.bubbleId)
