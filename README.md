@@ -16,7 +16,7 @@ I tried AAShareBubbles with Swift, it mostly worked. But I cannot use AAShareBub
 
 ## Requirements
 
-iOS 8.0 or later, written in Swift3.
+iOS 8.0 or later, written in Swift4s.
 
 ## Installation
 
