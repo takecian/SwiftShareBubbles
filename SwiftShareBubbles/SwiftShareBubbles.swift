@@ -14,6 +14,10 @@ public class SwiftShareBubbles: UIView {
     public var showBubbleTypes = [Bubble.facebook, Bubble.twitter, Bubble.line, Bubble.google, Bubble.instagram, Bubble.linkedin, Bubble.pintereset, Bubble.weibo, Bubble.whatsapp, Bubble.youtube]
     public var customBubbleAttributes = [ShareAttirbute]()
     
+    public var isShown: Bool {
+        return self.superview != nil
+    }
+    
     private var radius: Int
     private var bubbleRadius: Int
     private var parentView: UIView
