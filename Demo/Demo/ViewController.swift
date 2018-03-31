@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftShareBubbles
-import Social
 
 class ViewController: UIViewController, SwiftShareBubblesDelegate {
 
@@ -18,7 +17,7 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         bubbles = SwiftShareBubbles(point: CGPoint(x: view.frame.width / 2, y: view.frame.height / 2), radius: 100, in: view)
-        bubbles?.showBubbleTypes = [Bubble.twitter, Bubble.line, Bubble.safari]
+        bubbles?.showBubbleTypes = [Bubble.facebook, Bubble.twitter, Bubble.safari]
         
         let customAttribute = ShareAttirbute(bubbleId: customBubbleId, icon: UIImage(named: "Custom")!, backgroundColor: UIColor.white)
         bubbles?.customBubbleAttributes = [customAttribute]
@@ -31,24 +30,21 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
             print("\(bubble)")
             switch bubble {
             case .facebook:
-                break
+                let alert = UIAlertController(title: nil, message: "Open facebook using SDK", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
             case .twitter:
-                if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
-                    guard let composer = SLComposeViewController(forServiceType: SLServiceTypeTwitter) else { return }
-                    composer.setInitialText("test test")
-                    present(composer, animated: true, completion: nil)
-                }
-                break
-            case .line:
-                break
+                let alert = UIAlertController(title: nil, message: "Open twitter using SDK", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
             default:
                 break
             }
-        
         } else {
             if customBubbleId == bubbleId {
-                // custom case
-                print("custom tapped")
+                let alert = UIAlertController(title: nil, message: "Add custom id handling", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                present(alert, animated: true, completion: nil)
             }
         }
     }
