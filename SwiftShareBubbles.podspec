@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SwiftShareBubbles'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Animated Social share buttons control for iOS written in Swift.'
   s.description      = <<-DESC
 Animated Social share buttons control for iOS written in Swift. This library is inspired AAShareBubbles.
@@ -16,6 +16,8 @@ Animated Social share buttons control for iOS written in Swift. This library is 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'SwiftShareBubbles/**/*'
+  s.exclude_files = 'SwiftShareBubbles/**/*.{plist}'
+
   s.resource_bundles = {
     'SwiftShareBubbles' => ['SwiftShareBubbles/SwiftShareBubbles.bundle']
   }
