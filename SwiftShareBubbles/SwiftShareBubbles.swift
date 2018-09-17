@@ -163,7 +163,7 @@ public class SwiftShareBubbles: UIView {
         iconView.frame = f;
         circle.addSubview(iconView)
         
-        button.setBackgroundImage(imageWith(view: circle), for: UIControlState.normal)
+        button.setBackgroundImage(imageWith(view: circle), for: UIControl.State.normal)
         buttons.append(button)
         attributes.append(attribute)
 
