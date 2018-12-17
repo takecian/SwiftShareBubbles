@@ -172,7 +172,7 @@
 					};
 					6488D4C21E729B9B0023393D = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = XEV6645KTD;
+						DevelopmentTeam = 495G5CPHRQ;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -390,7 +390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = XEV6645KTD;
+				DEVELOPMENT_TEAM = 495G5CPHRQ;
 				INFOPLIST_FILE = SwiftShareBubblesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.SwiftShareBubblesTests;
@@ -403,7 +403,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = XEV6645KTD;
+				DEVELOPMENT_TEAM = 495G5CPHRQ;
 				INFOPLIST_FILE = SwiftShareBubblesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.takecian.SwiftShareBubblesTests;
