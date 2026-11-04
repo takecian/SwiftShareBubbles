@@ -134,3 +134,10 @@ class ViewController: UIViewController, SwiftShareBubblesDelegate {
 ## License
 
 MIT
+
+### Development tooling
+
+Use a maintained Ruby (3.3 or newer recommended) and the Bundler version recorded
+in `Gemfile.lock`. Run `bundle install` and invoke CocoaPods with `bundle exec pod`.
+See [the dependency security review](docs/dependency-security.md) for toolchain
+constraints, security scope, and macOS validation commands.
