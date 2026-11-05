@@ -14,7 +14,7 @@ Animated Social share buttons control for iOS written in Swift. This library is 
   s.social_media_url = 'https://twitter.com/takecian'
   s.swift_version    = '5.0'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '16.0'
 
   s.source_files = 'SwiftShareBubbles/**/*'
   s.exclude_files = 'SwiftShareBubbles/**/*.{plist}'
